@@ -14,6 +14,8 @@ background:#111;
 color:white;
 }
 
+/* Page d'accueil */
+
 header{
 height:100vh;
 display:flex;
@@ -25,7 +27,7 @@ background-image:
 linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),
 url("Fond.PNG");
 
-background-size:65%;
+background-size:55%;
 background-position:center top;
 background-repeat:no-repeat;
 background-color:#111;
@@ -39,17 +41,17 @@ header h1{
 font-size:75px;
 color:#FFD700;
 text-shadow:0 0 20px #FFD700;
+margin-bottom:20px;
 }
 
 header p{
-margin-top:20px;
 font-size:24px;
 color:white;
+margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-margin-top:35px;
 padding:18px 45px;
 background:#FFD700;
 color:#000;
@@ -72,8 +74,8 @@ padding:80px 20px;
 section h2{
 text-align:center;
 font-size:50px;
-color:#FFD700;
 margin-bottom:50px;
+color:#FFD700;
 text-shadow:0 0 15px gold;
 }
 
@@ -106,8 +108,8 @@ object-fit:cover;
 
 .card h3{
 text-align:center;
-font-size:35px;
 margin:20px;
+font-size:34px;
 color:#FFD700;
 }
 
@@ -119,8 +121,8 @@ background:#25D366;
 color:white;
 text-decoration:none;
 text-align:center;
-font-weight:bold;
 border-radius:12px;
+font-weight:bold;
 transition:.3s;
 }
 
@@ -132,7 +134,7 @@ footer{
 background:#000;
 padding:30px;
 text-align:center;
-color:#aaa;
+color:#999;
 font-size:18px;
 }
 
@@ -142,8 +144,8 @@ bottom:20px;
 right:20px;
 width:70px;
 height:70px;
-border-radius:50%;
 background:#25D366;
+border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -157,7 +159,7 @@ z-index:999;
 @media(max-width:768px){
 
 header{
-background-size:95%;
+background-size:80%;
 background-position:center top;
 }
 
