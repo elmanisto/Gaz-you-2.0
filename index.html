@@ -1,79 +1,112 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GAZ YOU</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-<link rel="stylesheet" href="style.css">
+html{
+    scroll-behavior:smooth;
+}
 
-</head>
+body{
+    background:#111;
+    color:white;
+}
 
-<body>
+/* ACCUEIL */
 
-<header>
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 
-<div class="overlay">
+    background-image:
+        linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)),
+        url("Fond.PNG");
 
-<h1>GAZ YOU</h1>
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
 
-<p>La qualité avant tout.</p>
+.overlay{
+    padding:20px;
+}
 
-<a href="#produits" class="btn">
-Voir les produits
-</a>
+header h1{
+    font-size:70px;
+    color:#FFD700;
+    text-shadow:0 0 20px #FFD700;
+    margin-bottom:15px;
+}
 
-</div>
+header p{
+    font-size:22px;
+    margin-bottom:35px;
+}
 
-</header>
+.btn{
+    display:inline-block;
+    padding:18px 40px;
+    background:#FFD700;
+    color:#000;
+    text-decoration:none;
+    border-radius:15px;
+    font-size:28px;
+    font-weight:bold;
+}
 
-<section id="produits">
+/* PRODUITS */
 
-<h2>Nos Produits</h2>
+#produits{
+    padding:80px 20px;
+    text-align:center;
+}
 
-<div class="products">
+#produits h2{
+    font-size:55px;
+    color:#FFD700;
+    margin-bottom:50px;
+}
 
-<div class="card">
+.card{
+    background:#1e1e1e;
+    border-radius:25px;
+    margin:30px auto;
+    max-width:420px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(255,215,0,.25);
+}
 
-<img src="Tk.JPG" alt="Tank">
+.card img{
+    width:100%;
+    display:block;
+}
 
-<h3>Tank</h3>
+.card h3{
+    font-size:50px;
+    color:#FFD700;
+    margin:25px 0;
+}
 
-<a href="https://wa.me/33761666226?text=Bonjour%20je%20souhaite%20commander%20un%20Tank">
-Commander sur WhatsApp
-</a>
+.whatsapp{
+    display:block;
+    margin:0 20px 25px;
+    padding:18px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:15px;
+    font-size:28px;
+    font-weight:bold;
+}
 
-</div>
-
-<div class="card">
-
-<img src="1bbn.JPG" alt="Bonbonne">
-
-<h3>Bonbonne</h3>
-
-<a href="https://wa.me/33761666226?text=Bonjour%20je%20souhaite%20commander%20une%20Bonbonne">
-Commander sur WhatsApp
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 GAZ YOU
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/33761666226">
-
-💬
-
-</a>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+footer{
+    text-align:center;
+    padding:40px;
+    font-size:22px;
+    background:#000;
+}
