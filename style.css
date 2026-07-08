@@ -25,9 +25,10 @@ background-image:
 linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),
 url("Fond.PNG");
 
-background-size:110%;
-background-position:center center;
+background-size:65%;
+background-position:center top;
 background-repeat:no-repeat;
+background-color:#111;
 }
 
 .overlay{
@@ -156,8 +157,8 @@ z-index:999;
 @media(max-width:768px){
 
 header{
-background-size:140%;
-background-position:center;
+background-size:95%;
+background-position:center top;
 }
 
 header h1{
